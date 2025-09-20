@@ -37,7 +37,15 @@ fun comparadorContadores() {
             .padding(24.dp),
         verticalArrangement = Arrangement.Center,
         horizontalAlignment = Alignment.CenterHorizontally
-    ){  }
+    ){
+        Text(
+            text = "Comparando estados",
+            style = MaterialTheme.typography.headlineSmall,
+            fontWeight = FontWeight.Bold,
+            color = Color(0xFF6200EA),
+            textAlign = TextAlign.Center
+        )
+    }
 }
 
 
