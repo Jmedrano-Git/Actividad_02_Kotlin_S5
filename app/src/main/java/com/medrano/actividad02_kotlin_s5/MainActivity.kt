@@ -98,7 +98,7 @@ fun comparadorContadores() {
         Text("Persistente (rememberSaveable): $contPersistente")
         Button(
             onClick = {
-                contPersistente++
+                if (!bloqueoActivo) contPersistente++
             },
             modifier = Modifier.padding(top = 8.dp)
         ) {
