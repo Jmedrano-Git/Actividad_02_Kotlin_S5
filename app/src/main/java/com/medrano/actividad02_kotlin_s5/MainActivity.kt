@@ -47,6 +47,7 @@ class MainActivity : ComponentActivity() {
 fun comparadorContadores() {
     var contEphemeral by remember { mutableStateOf(0) }
     var contPersistente by rememberSaveable { mutableStateOf(0) }
+    var bloqueoActivo by remember { mutableStateOf(true) }
 
     Column(
         modifier = Modifier
