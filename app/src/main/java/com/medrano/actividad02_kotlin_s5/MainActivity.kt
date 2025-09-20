@@ -30,6 +30,14 @@ class MainActivity : ComponentActivity() {
 fun comparadorContadores() {
     var contEphemeral by remember { mutableStateOf("") }
     var contPersistente by remember { mutableStateOf("") }
+
+    Column(
+        modifier = Modifier
+            .fillMaxSize()
+            .padding(24.dp),
+        verticalArrangement = Arrangement.Center,
+        horizontalAlignment = Alignment.CenterHorizontally
+    ){  }
 }
 
 
