@@ -71,6 +71,16 @@ fun comparadorContadores() {
         ) {
             Text("+1")
         }
+
+        Spacer(modifier = Modifier.height(32.dp))
+
+        Text(
+            text = "Rota la pantalla y observa qué contador se reinicia.",
+            textAlign = TextAlign.Center,
+            style = MaterialTheme.typography.bodyMedium,
+            modifier = Modifier.fillMaxWidth()
+
+        )
     }
 }
 
