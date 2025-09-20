@@ -85,7 +85,7 @@ fun comparadorContadores() {
         Text("Ephemeral (remember): $contEphemeral")
         Button(
             onClick = {
-                contEphemeral++
+                if (!bloqueoActivo) contEphemeral++
             },
             modifier = Modifier.padding(top = 8.dp)
         ) {
