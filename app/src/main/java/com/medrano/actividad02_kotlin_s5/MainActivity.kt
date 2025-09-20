@@ -66,7 +66,22 @@ fun comparadorContadores() {
 
         Spacer(modifier = Modifier.height(32.dp))
 
-        //Contador con remenber
+        Button(
+            onClick = {
+                bloqueoActivo = !bloqueoActivo
+            },
+            colors = ButtonDefaults.buttonColors(
+                containerColor = Color(0xFF6200EA),
+                contentColor = Color.White
+            ),
+            modifier = Modifier.fillMaxWidth()
+        ) {
+            Text(if (bloqueoActivo) "Desbloquear" else "Bloquear")
+        }
+
+        Spacer(modifier = Modifier.height(32.dp))
+
+        //Contador Ephemeral
         Text("Ephemeral (remember): $contEphemeral")
         Button(
             onClick = {
