@@ -45,6 +45,32 @@ fun comparadorContadores() {
             color = Color(0xFF6200EA),
             textAlign = TextAlign.Center
         )
+
+        Spacer(modifier = Modifier.height(32.dp))
+
+        //Contador con remenber
+        Text("Ephemeral (remember): $contEphemeral")
+        Button(
+            onClick = {
+                contEphemeral++
+            },
+            modifier = Modifier.padding(top = 8.dp)
+        ) {
+            Text("+1")
+        }
+
+        Spacer(modifier = Modifier.height(24.dp))
+
+        //Contador con rememberSaveable
+        Text("Persistente (rememberSaveable): $contPersistente")
+        Button(
+            onClick = {
+                contPersistente++
+            },
+            modifier = Modifier.padding(top = 8.dp)
+        ) {
+            Text("+1")
+        }
     }
 }
 
