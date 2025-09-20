@@ -107,6 +107,26 @@ fun comparadorContadores() {
 
         Spacer(modifier = Modifier.height(32.dp))
 
+        if (bloqueoActivo){
+            Text(
+                text = "Contador bloqueado",
+                color = Color.Red,
+                textAlign = TextAlign.Center,
+                style = MaterialTheme.typography.bodyMedium,
+                modifier = Modifier.fillMaxWidth()
+            )
+        } else {
+            Text(
+                text = "Contador activo",
+                color = Color(0xFF388E3C),
+                textAlign = TextAlign.Center,
+                style = MaterialTheme.typography.bodyMedium,
+                modifier = Modifier.fillMaxWidth()
+            )
+        }
+
+        Spacer(modifier = Modifier.height(32.dp))
+
         Text(
             text = "Rota la pantalla y observa qué contador se reinicia.",
             textAlign = TextAlign.Center,
