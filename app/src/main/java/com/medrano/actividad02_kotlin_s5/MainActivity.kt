@@ -35,6 +35,9 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContent {
+            Actividad02_Kotlin_S5Theme {
+                comparadorContadores()
+            }
         }
     }
 }
