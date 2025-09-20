@@ -45,7 +45,7 @@ class MainActivity : ComponentActivity() {
 @Composable
 fun comparadorContadores() {
     var contEphemeral by remember { mutableStateOf(0) }
-    var contPersistente by remember { mutableStateOf(0) }
+    var contPersistente by rememberSaveable { mutableStateOf(0) }
 
     Column(
         modifier = Modifier
